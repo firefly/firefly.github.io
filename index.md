@@ -71,7 +71,7 @@ title: Home
 
   <div class="device-image">
     <div class="pixie-image-wrapper">
-      <img src="/assets/images/ff-crop-real.png" alt="Firefly Pixie DevKit in use" />
+      <img src="/assets/images/ff-crop-real-min.png" alt="Firefly Pixie DevKit in use" />
     </div>
   </div>
 </section>
