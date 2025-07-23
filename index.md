@@ -40,7 +40,7 @@ title: Home
   <div class="feature-grid">
     <div class="feature">
       <h3>Open Everything</h3>
-      <p>Hardware, firmware, bootloader, design files — all open source and ready to be customized</p>
+      <p>Both hardware and firmware — all open source and ready to be customized</p>
     </div>
     <div class="feature">
       <h3>Run Custom Firmware</h3>
