@@ -39,7 +39,7 @@ permalink: /faqs/
       </div>
       <div class="faq-item">
         <div class="faq-question"><span class="faq-number">5</span>Does Firefly store my keys?</div>
-        <div class="faq-answer">Yes, private keys are generated on device. The Firefly team does not have access to your private keys at any point.</div>
+        <div class="faq-answer">The current firmware generates private keys on the device, upcoming firmware will simplify importing your own keys. The Firefly team does not have access to your private keys at any point.</div>
       </div>
     </div>
   
@@ -73,25 +73,25 @@ permalink: /faqs/
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-question"><span class="faq-number">1</span>What kind of chip does Firefly use?</div>
-        <div class="faq-answer">Firefly uses an ESP32-C3, a 32-bit RISC-V microcontroller chip. It runs at 160 MHz, with 400 KB of RAM, 16 MB of flash memory, and 4 KB of eFuse. This chip supports USB-C for power and data (JTAG and CDC-ACM) and includes Bluetooth Low Energy (BLE) connectivity</div>
+        <div class="faq-answer">Firefly uses an ESP32-C3, a 32-bit RISC-V microcontroller chip. It runs at 160 MHz, with 400 KB of RAM and 16 MB of flash memory. This chip supports USB-C for power and data (JTAG and CDC-ACM) and includes Bluetooth Low Energy (BLE) connectivity.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question"><span class="faq-number">2</span>Is Firefly secure hardware?</div>
-        <div class="faq-answer">The Firefly DevKit does intentionally not have secure boot, so that it's easier for developers to play with. Our plan is to release a version of the Firefly with secure boot. 
+        <div class="faq-answer">The Firefly DevKit does currently include secure boot, so that it's easier for developers to play with. Future devices will have a secure boot option. 
          <br/><br/> 
-        Firefly does not currently have a secure enclave because in most cases this requires a secure element, which is secure through obscurity. We are currently working on a secure enclave that would provide the same benefits of a secure element while being open-source and transparent.</div>
+        Firefly does not currently have a secure enclave because in most cases this requires a secure element, which are generally not open-source and rely on secure through obscurity. We are currently working on secure enclave equivalent solutions that would provide the same benefits of a secure element while being open-source and transparent.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question"><span class="faq-number">3</span>Can I customize the hardware?</div>
-        <div class="faq-answer">Yes — the hardware schematics are open source and modifiable. You can 3D print your own case or modify the board.</div>
+        <div class="faq-answer">Yes — the hardware schematics are open source and modifiable. You can 3D print your own case or modify the board.<br /><br />The PCB also has GPIO pins 20 and 21 broken out to simplify attaching your own hardware.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question"><span class="faq-number">4</span>What’s the display and button setup?</div>
-        <div class="faq-answer">Firefly has a small screen and a few programmable buttons for interactive input, navigation, or gameplay.</div>
+        <div class="faq-answer">Firefly has a small 240x240 pixel screen (16-bit color) and four programmable buttons for interactive input, navigation, or gameplay.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question"><span class="faq-number">5</span>How is it powered?</div>
-        <div class="faq-answer">Firefly is USB-C powered, you can plug it into any computer, mobile device, or portable battery that supports USB-C and WebUSB.</div>
+        <div class="faq-answer">Firefly is USB-C powered, you can plug it into any computer, mobile device, or portable battery that supports USB-C.</div>
       </div>
     </div>
   </section>
