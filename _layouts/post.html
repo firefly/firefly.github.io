@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | Firefly</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  {% include header.html %}
+
+  <div class="container">
+
+    <nav class="breadcrumbs">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/updates">Updates</a>
+      <span>/</span>
+      <span>{{ page.title }}</span>
+    </nav>
+  
+    <article class="post-content">
+      <h1>{{ page.title }}</h1>
+      <p class="meta">
+        {{ page.date | date: "%Y.%m.%d" }}
+        {% if page.tags %}
+          · <span class="tag">{{ page.tags[0] }}</span>
+        {% endif %}
+      </p>
+  
+      {{ content }}
+  
+    </article>
+  
+  </div>
+  
+
+  {% include footer.html %}
+
+</body>
+</html>

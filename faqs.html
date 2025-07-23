@@ -1,0 +1,108 @@
+---
+layout: default
+title: FAQ
+permalink: /faqs/
+---
+
+<section class="faq-section container">
+    <h1 class="faq-title">Frequently Asked Questions</h1>
+  
+    <!-- Sticky Table of Contents -->
+    <nav class="faq-toc">
+      <ul>
+        <li><a href="#general">General</a></li>
+        <li><a href="#firmware">Firmware</a></li>
+        <li><a href="#hardware">Hardware</a></li>
+      </ul>
+    </nav>
+  
+    <!-- General -->
+    <h2 id="general" class="faq-category">General</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">1</span>What is Firefly?</div>
+        <div class="faq-answer">Firefly is an open-source hardware device designed for Ethereum. All firmware for Firefly is open-source. Firefly can be used as a hardware wallet, a security key, and a gaming device.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">2</span>Who is Firefly for?</div>
+        <div class="faq-answer">Firefly is built for Ethereum developers, security researchers, and experimenters who want full control of their crypto hardware. 
+          <br/><br/>
+          Firefly can also be utilised by companies with protocols and dapps who are looking to improve and/or customise the crypto experience for their users or team.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">3</span>Is Firefly open source?</div>
+        <div class="faq-answer">Yes — hardware designs, firmware, and tooling are all open source and fully customizable. You can find everything on Github at <a href="https://github.com/firefly" target="_blank" rel="noopener noreferrer" class="">github.com/firefly</a> </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">4</span>Where can I get a Firefly?</div>
+        <div class="faq-answer">Firefly is not currently ready for retail distribution. Our Firefly DevKit is distributed in real life at Ethereum conferences and hackathons. We are working on additional channels to distribute Firefly Devkits, sign up <a href="https://futurealisha.notion.site/235286cca4d880728949f6beab193729" target="_blank" rel="noopener noreferrer" class="">here</a> for more info. </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">5</span>Does Firefly store my keys?</div>
+        <div class="faq-answer">Yes, private keys are generated on device. The Firefly team does not have access to your private keys at any point.</div>
+      </div>
+    </div>
+  
+    <!-- Firmware -->
+    <h2 id="firmware" class="faq-category">Firmware</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">1</span>How do I flash Firefly?</div>
+        <div class="faq-answer">Use the Firefly Flasher at <code>https://firefly.box/flash</code> in your browser to install or update firmware via USB-C.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">2</span>Can I write my own firmware?</div>
+        <div class="faq-answer">Yes! Firefly is fully programmable — you can build your own apps or modify existing firmware. We are working on developer tooling to improve the developer experience and will post updated on Github when they're available.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">3</span>What languages are supported?</div>
+        <div class="faq-answer">Most firmware is written in C, but you can compile to the supported MCU toolchain. Soon you will be able to build with our SDK.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">4</span>What is the default firmware?</div>
+        <div class="faq-answer">The default firmware supports Ethereum transaction signing, basic crypto utilities, and experimental mini-apps.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">5</span>Is firmware secure?</div>
+        <div class="faq-answer">Firefly firmware is auditable and customizable. You can inspect, build, and verify your firmware before flashing it.</div>
+      </div>
+    </div>
+  
+    <!-- Hardware -->
+    <h2 id="hardware" class="faq-category">Hardware</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">1</span>What kind of chip does Firefly use?</div>
+        <div class="faq-answer">Firefly uses an ESP32-C3, a 32-bit RISC-V microcontroller chip. It runs at 160 MHz, with 400 KB of RAM, 16 MB of flash memory, and 4 KB of eFuse. This chip supports USB-C for power and data (JTAG and CDC-ACM) and includes Bluetooth Low Energy (BLE) connectivity</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">2</span>Is Firefly secure hardware?</div>
+        <div class="faq-answer">The Firefly DevKit does intentionally not have secure boot, so that it's easier for developers to play with. Our plan is to release a version of the Firefly with secure boot. 
+         <br/><br/> 
+        Firefly does not currently have a secure enclave because in most cases this requires a secure element, which is secure through obscurity. We are currently working on a secure enclave that would provide the same benefits of a secure element while being open-source and transparent.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">3</span>Can I customize the hardware?</div>
+        <div class="faq-answer">Yes — the hardware schematics are open source and modifiable. You can 3D print your own case or modify the board.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">4</span>What’s the display and button setup?</div>
+        <div class="faq-answer">Firefly has a small screen and a few programmable buttons for interactive input, navigation, or gameplay.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question"><span class="faq-number">5</span>How is it powered?</div>
+        <div class="faq-answer">Firefly is USB-C powered, you can plug it into any computer, mobile device, or portable battery that supports USB-C and WebUSB.</div>
+      </div>
+    </div>
+  </section>
+  
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach((question) => {
+      question.addEventListener('click', () => {
+        const parent = question.closest('.faq-item');
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
+  
