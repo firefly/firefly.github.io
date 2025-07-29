@@ -10,3 +10,27 @@
     <p>&copy; 2025 Firefly</p>
   </div>
 </footer>
+
+<div id="fireflies"></div>
+<script type="module">
+  import { Fireflies } from "/assets/scripts/firefly.js";
+
+  const div = document.getElementById("fireflies");
+
+  const resize = () => {
+    const height = document.body.scrollHeight
+    div.style.height = height + "px";
+    return height;
+  };
+
+  // Once all content is loaded and rendered with styles, start the fireflies
+  window.addEventListener("load", () => {
+    const height = resize();
+    const count = Math.trunc(25 * height / 4500);
+    const fireflies = new Fireflies(div, count);
+    fireflies.start();
+  });
+
+  // On resize, we need to reset the height of the firefly field
+  window.addEventListener("resize", resize);
+</script>

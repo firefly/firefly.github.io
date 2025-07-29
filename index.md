@@ -5,24 +5,6 @@ title: Home
 
 
 <section class="hero">
-  <div class="firefly-container">
-    <!-- fireflies will be generated with CSS -->
-    <div class="firefly-container">
-      <div class="firefly yellow"></div>
-      <div class="firefly pink"></div>
-      <div class="firefly purple"></div>
-      <div class="firefly yellow"></div>
-      <div class="firefly pink"></div>
-      <div class="firefly purple"></div>
-      <div class="firefly yellow"></div>
-      <div class="firefly pink"></div>
-      <div class="firefly purple"></div>
-      <div class="firefly green"></div>
-      <div class="firefly green"></div>
-      <div class="firefly green"></div>
-    </div>
-  </div>
-
   <div class="hero-inner">
     <h1>Open-source, open-hardware</h1>
     <p>Firefly is a crypto-native device for Ethereum<br />Designed to be modified and customized</p>
